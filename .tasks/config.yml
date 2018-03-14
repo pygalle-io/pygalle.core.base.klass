@@ -1,0 +1,27 @@
+package:
+  name: pygalle.core.base.klass
+github:
+  username: pygalle-io
+  repository: pygalle.core.base.klass
+workInProgress: true
+credits:
+  - package:
+      name: shortid
+      url: https://github.com/corpix/shortid
+    author:
+      name: corpix
+      url: https://github.com/corpix/
+copyright:
+  year: 2018
+  author:
+    name: SAS 9 Février
+    url: https://9fevrier.com/
+example: |
+  from pygalle.core.base.klass import PygalleBaseClass
+
+  # Extends the PygalleBaseClass
+  class CustomClass(PygalleBaseClass):
+
+      def __init__(self, *args, **kwargs)
+        super().__init__(*args, **kwargs)
+
