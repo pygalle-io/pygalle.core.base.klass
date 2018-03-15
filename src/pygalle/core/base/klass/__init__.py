@@ -224,7 +224,16 @@ class PygalleBaseClass(object):
         """
         return self.to_dict()
 
-    # @todo: not really JSON is returned, but a stringified JSON...
+    def __dict__(self) -> dict:
+        """ Override Python method: dict()
+
+        Alias of :method:`to_dict`.
+
+        Returns:
+            dict: The `dict` representation of the current instance.
+        """
+        return self.to_dict()
+
     def to_json(self) -> str:
         """ Returns a representation as JSON of the current instance.
 
@@ -378,3 +387,4 @@ class PygalleBaseClass(object):
             bool: Always true.
 
         """
+        return True

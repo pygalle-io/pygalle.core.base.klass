@@ -1,11 +1,11 @@
-pygalle.core.entity package
+pygalle.core.base package
 =========================
 
 Submodules
 ----------
 
-pygalle.core.entity.base module
-------------------------------
+pygalle.core.base module
+------------------------
 
 .. automodule:: pygalle.core.base.klass
     :members:
