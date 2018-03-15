@@ -6,7 +6,7 @@ Subpackages
 
 .. toctree::
 
-    pygalle.core.entity
+    pygalle.core.base
 
 Module contents
 ---------------

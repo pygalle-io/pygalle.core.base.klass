@@ -4,21 +4,21 @@ pygalle.core.entity package
 Submodules
 ----------
 
-pygalle.core.entity.klass module
+pygalle.core.entity.base module
 ------------------------------
 
-.. automodule:: pygalle.core.entity.klass
+.. automodule:: pygalle.core.base.klass
     :members:
     :undoc-members:
     :show-inheritance:
 
-.. autoclass:: pygalle.core.entity.klass.PygalleBaseClass
+.. autoclass:: pygalle.core.base.klass.PygalleBaseClass
 
 
 Module contents
 ---------------
 
-.. automodule:: pygalle.core.entity
+.. automodule:: pygalle.core.base
     :members:
     :undoc-members:
     :show-inheritance:
