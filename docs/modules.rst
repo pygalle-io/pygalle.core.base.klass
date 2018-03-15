@@ -1,5 +1,5 @@
-src
-===
+pygalle
+=======
 
 .. toctree::
    :maxdepth: 4

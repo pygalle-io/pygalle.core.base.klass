@@ -1,19 +1,12 @@
 pygalle.core.base package
 =========================
 
-Submodules
-----------
+Subpackages
+-----------
 
-pygalle.core.base module
-------------------------
+.. toctree::
 
-.. automodule:: pygalle.core.base.klass
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. autoclass:: pygalle.core.base.klass.PygalleBaseClass
-
+    pygalle.core.base.klass
 
 Module contents
 ---------------
