@@ -1,3 +1,4 @@
+yaml
 sphinx>=1.7.1
 recommonmark>=0.4.0
 pygit2==0.19.1
