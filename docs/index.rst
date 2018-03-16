@@ -4,7 +4,7 @@ Welcome to pygalle.core.base.klass's documentation!
 ===================================================
 
 .. toctree::
-    pygalle
+    modules
 
 
 Indices and tables

@@ -1,5 +1,6 @@
 package:
   name: pygalle.core.base.klass
+  version: 0.1.4
 github:
   username: pygalle-io
   repository: pygalle.core.base.klass
