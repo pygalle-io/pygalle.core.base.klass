@@ -4,8 +4,6 @@ Welcome to pygalle.core.base.klass's documentation!
 ===================================================
 
 .. toctree::
-    :maxdepth: 4
-       :caption: Contents:
     pygalle
 
 
