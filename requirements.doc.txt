@@ -2,3 +2,4 @@ pyyaml>=3.12
 sphinx>=1.7.1
 recommonmark>=0.4.0
 m2r>=0.1.13
+jinja2>=2.10

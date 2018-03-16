@@ -1,4 +1,4 @@
-from coveralls.cli import main as coveralls_cli
+
 
 import distutils
 
@@ -14,5 +14,9 @@ class CoverallsCommand(distutils.cmd.Command):
         pass
 
     def run(self):
-        print('Run coveralls')
-        coveralls_cli([])
+        try:
+            from coveralls.cli import main as coveralls_cli
+            print('Run coveralls')
+            coveralls_cli([])
+        except:
+            pass

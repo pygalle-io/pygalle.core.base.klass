@@ -1,6 +1,6 @@
 import distutils.log
 
-from sphinx.ext.apidoc import main as sphinx_apidoc
+
 
 class BuildApiCommand(distutils.cmd.Command):
     """A custom command to build api document with Sphinx"""
@@ -18,5 +18,9 @@ class BuildApiCommand(distutils.cmd.Command):
     def run(self):
         from sphinx.apidoc import main
         """Run command."""
-        sphinx_apidoc(['-f', '-o', './docs', './src/pygalle'])
-        #self.run_command('build_sphinx')
+        try:
+            from sphinx.ext.apidoc import main as sphinx_apidoc
+            sphinx_apidoc(['-f', '-o', './docs', './src/pygalle'])
+            #self.run_command('build_sphinx')
+        except:
+            pass
