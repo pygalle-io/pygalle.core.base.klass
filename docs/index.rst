@@ -1,7 +1,4 @@
-.. pygalle.core.base.klass documentation master file, created by
-sphinx-quickstart on Sat Mar 10 08:02:24 2018.
-You can adapt this file completely to your liking, but it should at least
-contain the root `toctree` directive.
+.. API documentation of pygalle.core.base.klass
 
 Welcome to pygalle.core.base.klass's documentation!
 ===================================================
@@ -9,6 +6,7 @@ Welcome to pygalle.core.base.klass's documentation!
 .. toctree::
     :maxdepth: 4
        :caption: Contents:
+    pygalle
 
 
 Indices and tables
