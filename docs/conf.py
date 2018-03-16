@@ -274,7 +274,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, SETTINGS['package']['name'], u'%s Documentation' % (SETTINGS['package']['name']),
-     author, SETTINGS['package']['name'], SETTINGS['description'],
+     author, SETTINGS['package']['name'], SETTINGS['package']['description'],
      'Miscellaneous'),
 ]
 
