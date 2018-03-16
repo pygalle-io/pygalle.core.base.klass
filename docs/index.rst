@@ -5,7 +5,7 @@ pygalle.core.base.klass: API documentation
    :maxdepth: 4
    :caption: Contents:
 
-   Read me!<readme>
+   readme
    pygalle.core.base.klass
 
 

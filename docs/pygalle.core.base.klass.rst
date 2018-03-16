@@ -13,3 +13,6 @@ Classes
 -------
 
 .. autoclass:: pygalle.core.base.klass.PygalleBaseClass
+    :members:
+    :undoc-members:
+    :show-inheritance:
