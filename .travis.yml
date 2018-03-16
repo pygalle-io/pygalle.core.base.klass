@@ -6,10 +6,10 @@ python:
   - "3.6"
   #- "3.7-dev"  # 3.7 development branch
 # command to install dependencies
-addons:
-  apt:
-    packages:
-      - libgit2-dev
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get upgrade -y
+  - sudo apt-get install -y libgit2-dev
 install:
   - pip --no-cache-dir install -r requirements.txt
   - pip --no-cache-dir install -r test-requirements.txt
