@@ -52,8 +52,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = SETTINGS['package']['name']
-copyright = '%d, %s' % (SETTINGS['copyright']['year'], SETTINGS['copyright']['name'])
-author = SETTINGS['copyright']['name']
+copyright = '%d, %s' % (SETTINGS['copyright']['year'], SETTINGS['copyright']['author']['name'])
+author = SETTINGS['copyright']['author']['name']
 
 github_doc_root = 'https://github.com/%s/%s/tree/%s/docs/' % (SETTINGS['github']['username'], SETTINGS['github']['repository'], SETTINGS['github']['branch'])
 
