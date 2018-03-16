@@ -3,7 +3,7 @@
 
 ### Thanks to the developers of the very useful dependencies...
 
-{% for credit in credits %}* [{{ credit.package.name | safe }}]({{ credit.package.url | safe }}) by [{{ credit.author.name | safe }}]({{ credit.author.url| safe }}).
+{% for credit in credits %}* [{{ credit.package.name | safe }}]({{ credit.package.url | safe }}) by [{{ credit.author.name | safe }}]({{ credit.author.url| safe }}){% if credit.package.license %}, {{ credit.package.license|safe }}{% endif %}.
 {% endfor %}
 
 {% endif %}

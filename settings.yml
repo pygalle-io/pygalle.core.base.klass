@@ -8,9 +8,17 @@ credits:
   - package:
       name: shortid
       url: https://github.com/corpix/shortid
+      license: '[Copyright (c) 2014 Dmitry Moskowski <me@corpix.ru>, MIT License](https://raw.githubusercontent.com/corpix/shortid/master/LICENSE)'
     author:
       name: corpix
       url: https://github.com/corpix/
+  - package:
+      name: DotMap
+      url: https://github.com/drgrib/dotmap
+      license: '[Copyright (c) 2015 Chris Redford, MIT License](https://raw.githubusercontent.com/drgrib/dotmap/master/LICENSE.txt)'
+    author:
+      name: drgrib
+      url: https://github.com/drgrib/
 copyright:
   year: 2018
   author:

@@ -16,6 +16,9 @@ import os, sys
 from setuptools import setup, find_packages
 
 sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '.setup'))
+
+from cmds import PylintCommand, GenerateReadmeCommand, BuildApiCommand, CoverallsCommand, Build, CoverageCommand
 
 from pygalle_package import CONFIGURATION
 
@@ -72,4 +75,12 @@ setup(name='%s' % (CONFIGURATION['name']),
           'Programming Language :: Python :: 3.6',
           ],
       download_url=download_url,
+      cmdclass={
+          'lint': PylintCommand,
+          'readme': GenerateReadmeCommand,
+          'apidoc': BuildApiCommand,
+          'coverage': CoverageCommand,
+          'coveralls': CoverallsCommand,
+          'travis': Build,
+      },
       )

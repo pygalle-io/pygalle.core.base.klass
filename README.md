@@ -149,7 +149,8 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ### Thanks to the developers of the very useful dependencies...
 
-* [shortid](https://github.com/corpix/shortid) by [corpix](https://github.com/corpix/).
+* [shortid](https://github.com/corpix/shortid) by [corpix](https://github.com/corpix/), [Copyright (c) 2014 Dmitry Moskowski <me@corpix.ru>, MIT License](https://raw.githubusercontent.com/corpix/shortid/master/LICENSE).
+* [DotMap](https://github.com/drgrib/dotmap) by [drgrib](https://github.com/drgrib/), [Copyright (c) 2015 Chris Redford, MIT License](https://raw.githubusercontent.com/drgrib/dotmap/master/LICENSE.txt).
 
 
 

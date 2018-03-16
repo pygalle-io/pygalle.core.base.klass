@@ -8,5 +8,3 @@ Module contents
     :members:
     :undoc-members:
     :show-inheritance:
-
-.. autoclass:: pygalle.core.base.klass.PygalleBaseClass
