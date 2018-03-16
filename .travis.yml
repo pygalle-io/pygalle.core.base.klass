@@ -6,9 +6,7 @@ python:
   #- "3.7-dev"  # 3.7 development branch
 # command to install dependencies
 before_install:
-  - sudo apt-get install cmake python-dev python-pip libffi-dev libssh2-1-dev zlib1g-dev libssl-dev pkg-config libhttp-parser-dev -y
-  - wget https://github.com/libgit2/libgit2/archive/v0.22.2.tar.gz && tar xzf v0.22.2.tar.gz && cd libgit2-0.22.2/ && cmake . && make && sudo make install && sudo ldconfig && cd -
-  #- cd ~/pygalle-io/pygalle.core.base.klass
+  - sudo apt-get install libgit2-dev -y
 install:
   - pip --no-cache-dir install -r requirements.txt
   - pip --no-cache-dir install -r test-requirements.txt

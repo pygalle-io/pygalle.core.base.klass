@@ -1,5 +1,5 @@
 sphinx>=1.7.1
 recommonmark>=0.4.0
-pygit2>=0.24.2
+pygit2==0.19.1
 pypandoc>=1.4
 
