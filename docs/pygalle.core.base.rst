@@ -1,5 +1,5 @@
-pygalle.core.base.klass package
-===============================
+pygalle.core.base package
+=========================
 
 Module contents
 ---------------
@@ -8,6 +8,7 @@ Module contents
     :members:
     :undoc-members:
     :show-inheritance:
+    :inherited-members:
 
 Classes
 -------
