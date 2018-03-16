@@ -1,4 +1,4 @@
-pyyaml
+pyyaml>=3.12
 sphinx>=1.7.1
 recommonmark>=0.4.0
-pygit2
+m2r>=0.1.13

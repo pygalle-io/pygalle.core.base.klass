@@ -5,8 +5,8 @@ pygalle.core.base.klass: API documentation
    :maxdepth: 4
    :caption: Contents:
 
+   Read me!<readme>
    pygalle.core.base.klass
-   :README:`https://github.com/pygalle-io/pygalle.core.base.klass`
 
 
 Indices and tables

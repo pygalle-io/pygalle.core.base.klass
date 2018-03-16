@@ -10,6 +10,7 @@ before_install:
 install:
   - pip --no-cache-dir install -r requirements.txt
   - pip --no-cache-dir install -r requirements.test.txt
+  - pip --no-cache-dir install -r requirements.doc.txt
   - pip --no-cache-dir install -r requirements.build.txt
 # command to run tests
 script: "python setup.py travis"

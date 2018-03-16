@@ -20,7 +20,7 @@ source_parsers = {
     '.md': CommonMarkParser
 }
 
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst', '.md', ]
 
 autoclass_content = 'both'
 
@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
+    'm2r',
 ]
 autosummary_generate = True
 
