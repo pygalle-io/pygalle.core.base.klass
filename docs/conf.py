@@ -4,7 +4,7 @@
 
 
 import os, sys
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '.setup'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '.setup'))
 from settings import SETTINGS
 
 # If extensions (or modules to document with autodoc) are in another directory,
