@@ -50,11 +50,11 @@ class PygalleBaseClass(object):
     def __init__(self, **kwargs) -> 'PygalleBaseClass':  # pylint: disable=unused-argument
         """ Create a new instance of :class:`PygalleBaseClass`
 
-        Args:
+        # Arguments
             args:
             kwargs:
 
-        Returns:
+        # Returns:
             PygalleBaseClass: An instance of :class:`PygalleBaseClass`
         """
         self.options = kwargs
@@ -66,7 +66,7 @@ class PygalleBaseClass(object):
     def init_properties(self) -> 'PygalleBaseClass':
         """ Initialize the Pigalle properties.
 
-        Returns:
+        # Returns:
             PygalleBaseClass: The current instance.
         """
         self._pigalle = {
@@ -78,10 +78,10 @@ class PygalleBaseClass(object):
     def get_pigalle(self, key: str) -> dict:
         """ Return value of a Pigalle property.
 
-        Args:
+        # Arguments
             key(str): The key of looked up Pigalle property.
 
-        Returns:
+        # Returns:
             object: The value of the Pigalle property.
         """
         return self._pigalle.get(key)
@@ -168,58 +168,58 @@ class PygalleBaseClass(object):
         """ Store the class name of the current instance of
         :class:`PygalleBaseClass` into internal property.
 
-        Returns:
+        # Returns:
             PygalleBaseClass: An instance of :class:`PygalleBaseClass`
         """
         return self.set_internal(PygalleBaseClass.__KEYS.CLASSNAME, self.__class__.__name__)
 
     def get_class_name(self) -> str:
-        """ Returns """
+        """ # Returns """
         return self.get_internal(PygalleBaseClass.__KEYS.CLASSNAME)
 
     def set_category(self, category: str = None) -> 'PygalleBaseClass':
         """ Define the category of the class.
 
-        Args:
+        # Arguments
             category: The name of category.
 
-        Returns:
+        # Returns:
             PygalleBaseClass: An instance of :class:`PygalleBaseClass`
         """
         return self.set_internal(PygalleBaseClass.__KEYS.CATEGORY, category)
 
     def get_category(self) -> str:
-        """ Returns the class category
+        """ # Returns the class category
 
-        Returns:
+        # Returns:
             str: The class category.
         """
         return self.get_internal(PygalleBaseClass.__KEYS.CATEGORY)
 
     def category(self) -> str:
-        """ Returns the class category.
+        """ # Returns the class category.
 
         __Alias to :method:`get_category`__
 
-        Returns:
+        # Returns:
             str: The class category.
         """
         return self.get_category()
 
     def to_dict(self) -> dict:
-        """  Returns a `dict` representation of current instance.
+        """  # Returns a `dict` representation of current instance.
 
-        Returns:
+        # Returns:
             dict: The `dict` representation of the current instance.
         """
         return {'$pigalle': self._pigalle, 'options': self.options}
 
     def to_object(self) -> dict:
-        """  Returns a `dict` representation of current instance.
+        """  # Returns a `dict` representation of current instance.
 
         __Alias of :method:`to_object`.__
 
-        Returns:
+        # Returns:
             dict: The `dict` representation of the current instance.
         """
         return self.to_dict()
@@ -229,15 +229,15 @@ class PygalleBaseClass(object):
 
         Alias of :method:`to_dict`.
 
-        Returns:
+        # Returns:
             dict: The `dict` representation of the current instance.
         """
         return self.to_dict()
 
     def to_json(self) -> str:
-        """ Returns a representation as JSON of the current instance.
+        """ # Returns a representation as JSON of the current instance.
 
-        Returns:
+        # Returns:
             str: A JSON string.
         """
         return json.dumps(self.to_object(), ensure_ascii=False)
@@ -245,10 +245,10 @@ class PygalleBaseClass(object):
     def instance_of(self, kls: Any) -> bool:
         """ Return true if the current object is an instance of passed type.
 
-        Args:
+        # Arguments
             kls: The class.
 
-        Returns:
+        # Returns:
             bool:
               * Return true if the current object is an instance of passed type.
               * False else.
@@ -262,10 +262,10 @@ class PygalleBaseClass(object):
         """ Return true if the passed object as argument is an instance
         of class being to the Pigalle framework.
 
-        Args:
+        # Arguments
             obj: The object to check.
 
-        Returns:
+        # Returns:
             bool:
                 * True if object is Pigalle.
                 * False else.
@@ -276,10 +276,10 @@ class PygalleBaseClass(object):
     def is_pigalle_class(kls: ClassVar) -> bool:
         """ Return true if the passed object as argument is a class being to the Pigalle framework.
 
-        Args:
+        # Arguments
             kls: The class to check.
 
-        Returns:
+        # Returns:
             bool:
                 * True if class is Pigalle.
                 * False else.
@@ -291,10 +291,10 @@ class PygalleBaseClass(object):
         """ Return true if the passed object as argument is a class or an
         instance of class being to the Pigalle framework.
 
-        Args:
+        # Arguments
             obj: The class or object to test.
 
-        Returns:
+        # Returns:
             bool:
                 * True if class or object is Pigalle.
                 * False else.
@@ -306,10 +306,10 @@ class PygalleBaseClass(object):
     def is_parent_class_of(cls, obj: Any) -> bool:
         """ Check if the provided object is a children of the current class.
 
-        Args:
+        # Arguments
             obj: The object to check.
 
-        Returns:
+        # Returns:
             bool:
                 * True if the current class is a parent of provided object.
                 * False else.
@@ -319,10 +319,10 @@ class PygalleBaseClass(object):
     def has_method(self, key: str) -> bool:
         """ Return if a method exists for the current instance.
 
-        Args:
+        # Arguments
             key: The method name.
 
-        Returns:
+        # Returns:
             bool:
                 * True if the current instance has the provided method.
                 * False else.
@@ -335,11 +335,11 @@ class PygalleBaseClass(object):
         """ A static factory method to create a new instance of {PigalleBaseClass}.
             If method is called from a derived class, create a new instance of this class.
 
-        Args:
+        # Arguments
             *args:
             **kwargs:
 
-        Returns:
+        # Returns:
             PygalleBaseClass: An instance of class or derived class.
         """
         return cls(**kwargs)
@@ -348,7 +348,7 @@ class PygalleBaseClass(object):
     def get_class(obj: Any) -> Any:
         """ A static helper to get the class of the passed object.
 
-        Args:
+        # Arguments
             o: An object.
         """
         return obj.__class__
@@ -357,10 +357,10 @@ class PygalleBaseClass(object):
     def class_name(obj: Any) -> str:
         """ A static helper to get the class name of the passed object.
 
-        Args:
+        # Arguments
             o: An object.
 
-        Returns:
+        # Returns:
             str: The class name of provided object.
         """
         return PygalleBaseClass.get_class(obj).__name__
@@ -369,10 +369,10 @@ class PygalleBaseClass(object):
     def is_class(obj) -> bool:
         """ Static helper method to check if the passed object is a class.
 
-        Args:
+        # Arguments
             o: An object to test if is a class.
 
-        Returns:
+        # Returns:
             bool:
                 * True if the passed object is a class.
                 * False else.
@@ -383,7 +383,7 @@ class PygalleBaseClass(object):
     def i_am_pigalle() -> bool:
         """ Simple function to check if the class is a Pigalle class.
 
-        Returns:
+        # Returns:
             bool: Always true.
 
         """
